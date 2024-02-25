@@ -12,7 +12,7 @@ export default function Contact() {
                             <span className="w-[30px] h-[2px] bg-primary"></span>
                             Sag Hallo 👋
                         </div>
-                        <h1 className="h1 max-w-md mb-8">Lass uns zusammenarbeiten.</h1>
+                        <h1 className="h1 max-w-md mb-8">Lass uns zusammen&shy;arbeiten.</h1>
                         <p className="subtitle max-w-[400px]">Schreibe mir gerne und lass uns über unsere Zusammenarbeit sprechen.</p>
                         <p className="form-error max-w-[400px]">Leider gibt es im Moment ein Problem mit dem Kontaktformular. Du kannst mir gerne direkt per Mail schreiben.</p>
                     </div>
