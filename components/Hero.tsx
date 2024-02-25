@@ -22,7 +22,7 @@ export default function Hero() {
                             <Link href="/contact/">
                                 <Button className="gap-x-2">Contact me <Send size={18}/></Button>
                             </Link>
-                            <Link href="/contact/">
+                            <Link href="/hero/Lebenslauf_Lennert_Pfundtner.pdf" download={true} rel="noopener noreferrer">
                                 <Button variant={"secondary"} className="gap-x-2">Download CV <Download size={18}/></Button>
                             </Link>
                         </div>
