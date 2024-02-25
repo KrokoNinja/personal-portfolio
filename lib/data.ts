@@ -12,7 +12,7 @@ export const projectData = [
     {
         image: "/work/product-view-card-component.webp",
         category: "HTML/CSS",
-        title: "Product View Card Component",
+        title: "Product View Card",
         description: "This is a solution to the Product preview card component challenge on Frontend Mentor.",
         link: 'https://krokoninja.github.io/fem-product-view-card-component/',
         github: 'https://github.com/KrokoNinja/fem-product-view-card-component',
