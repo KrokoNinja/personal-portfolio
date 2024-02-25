@@ -45,7 +45,7 @@ export default function Form() {
                 }
             )
         } else {
-            setStateMessage("I'm facing some issues. Please try to reach lenni.pfundtner@gmail.com directly.");
+            setStateMessage("I&apos;m facing some issues. Please try to reach lenni.pfundtner@gmail.com directly.");
             setIsSubmitting(false);
             setTimeout(() => {
                 setStateMessage(null);
@@ -69,7 +69,7 @@ export default function Form() {
                 <MessageSquare className="absolute top-4 right-6" size={20} />
             </div>
             <Button type="submit" className="flex items-center max-w-[166px] group gap-x-2" disabled={isSubmitting}>
-                Let's Talk
+                Let&apos;s Talk
                 <ArrowRightIcon size={18} className="group-hover:translate-x-2 transition-all" />
             </Button>
             {stateMessage && <p>{stateMessage}</p>}
