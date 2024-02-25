@@ -47,7 +47,7 @@ const qualificationData = [
       {
         university: "IU Internationale Hochschule",
         degree: "Bisher ohne Abschluss",
-        years: "2023 - Today",
+        years: "2023 - Heute",
       }
     ]
   },
@@ -57,7 +57,7 @@ const qualificationData = [
       {
         company: "Optimerch GmbH",
         role: "Web Developer",
-        years: "2023 - Today",
+        years: "2023 - Heute",
       },
       {
         company: 'dm drogerie markt',
@@ -139,7 +139,7 @@ export default function About() {
     }
 
     return (
-        <section className="xl:h-[860px] pb-12 xl:py-24">
+        <section className="xl:h-[860px] pb-12 xl:py-24 xl:mb-12">
             <div className="container mx-auto">
                 <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">About me</h2>
                 <div className="flex flex-col xl:flex-row">
@@ -149,15 +149,15 @@ export default function About() {
                     <div className="flex-1">
                         <Tabs defaultValue="personal">
                             <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
-                                <TabsTrigger className="w-[162px] xl:w-auto" value="personal">Personal Info</TabsTrigger>
-                                <TabsTrigger className="w-[162px] xl:w-auto" value="qualifications">Qualifications</TabsTrigger>
+                                <TabsTrigger className="w-[162px] xl:w-auto" value="personal">Persönliche Infos</TabsTrigger>
+                                <TabsTrigger className="w-[162px] xl:w-auto" value="qualifications">Qualifikationen</TabsTrigger>
                                 <TabsTrigger className="w-[162px] xl:w-auto" value="skills">Skills</TabsTrigger>
                             </TabsList>
                             <div className="text-lg mt-12 xl:mt-8">
                                 <TabsContent value="personal">
                                     <div className="text-center xl:text-left">
-                                        <h3 className="h3 mb-4">Unmatched Service Quality for Over 10 Years</h3>
-                                        <p className="subtitle max-w-xl mx-auto xl:mx-0">I specialize crafting intuitive websites with cutting-edge technology, delivering dynamic and engaging user experiences</p>
+                                        <h3 className="h3 mb-4">Das bin ich!</h3>
+                                        <p className="subtitle max-w-xl mx-auto xl:mx-0">Nachdem ich lange Zeit nicht wusste, was ich nach dem Abi machen soll, hab ich nun endlich gefunden was mir Spaß macht. Webentwicklung!</p>
                                         <div className="grid xl:grid-cols-2 gap-4 mb-12">
                                           {infoData.map((item:InfoType, index:number) => {
                                             return (
@@ -169,15 +169,15 @@ export default function About() {
                                           })}
                                         </div>
                                         <div className="flex flex-col gap-y-2">
-                                          <div className="text-primary">Language Skill</div>
+                                          <div className="text-primary">Sprachen</div>
                                           <div className="border-b border-border"></div>
-                                          <div>German (Mother Tongue), English (C1)</div>
+                                          <div>Deutsch (Muttersprache), Englisch (C1)</div>
                                         </div>
                                     </div>
                                 </TabsContent>
                                 <TabsContent value="qualifications">
                                   <div>
-                                    <h3 className="h3 mb-8 text-center xl:text-left">My Awesome Journey</h3>
+                                    <h3 className="h3 mb-8 text-center xl:text-left">Mein bisheriger Werdegang</h3>
                                     <div className="grid md:grid-cols-2 gap-y-8">
                                       {/* work experience*/}
                                       <div className="flex flex-col gap-y-6">
@@ -280,6 +280,14 @@ export default function About() {
                     </div>
                 </div>
             </div>
+            {/* <div className="flex w-full justify-center mt-12 items-center">
+              <Link href="/about">
+                <Button className="mx-auto group gap-x-4">
+                  Mehr über mich
+                  <ArrowRightIcon size={18} className="group-hover:translate-x-2 transition-all" />
+                </Button>
+              </Link>
+            </div> */}
         </section>
     );
 }

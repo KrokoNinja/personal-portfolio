@@ -4,7 +4,7 @@ import { ArrowRightIcon, MailIcon, MessageSquare, User } from "lucide-react"
 import { Input } from "./ui/input"
 import { Textarea } from "./ui/textarea"
 import { Button } from "./ui/button"
-import { FormEventHandler, useRef, useState } from "react"
+import { useState } from "react"
 import emailjs from '@emailjs/browser'
 
 export default function Form() {

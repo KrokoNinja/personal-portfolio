@@ -5,20 +5,20 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { projectData } from "@/lib/data";
 import { useState } from "react";
 
-const uniqueCategories = ['all projects', ...new Set(projectData.map((project) => project.category))];
+const uniqueCategories = ['alle projekte', ...new Set(projectData.map((project) => project.category))];
 
 export default function Projects() {
 
     const [categories, setCategories] = useState(uniqueCategories);
-    const [category, setCategory] = useState('all projects');
+    const [category, setCategory] = useState('alle projekte');
 
     const filteredProjects = projectData.filter((project) => {
-        return category === 'all projects' ? project : project.category === category;
+        return category === 'alle projekte' ? project : project.category === category;
     });
 
     return <section className="min-h-screen pt-12">
         <div className="container mx-auto">
-            <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">My Projects</h2>
+            <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">Meine Projekte</h2>
             <Tabs defaultValue={category} className="mb-24 xl:mb-48">
                 <TabsList className="w-full grid h-full md:grid-cols-3 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">
                     {categories.map((category, index) => {

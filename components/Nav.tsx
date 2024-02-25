@@ -4,9 +4,9 @@ import { motion } from "framer-motion"
 
 const links = [
     {name: 'Home', href: '/'},
-    {name: 'About', href: '/about'},
-    {name: 'Projects', href: '/projects'},
-    {name: 'Contact', href: '/contact'},
+    //{name: 'About', href: '/about'},
+    {name: 'Projekte', href: '/projects'},
+    {name: 'Kontakt', href: '/contact'},
 ]
 
 export default function Nav({containerStyles, linkStyles, underlineStyles} : {containerStyles?: string, linkStyles?: string, underlineStyles?: string}) {

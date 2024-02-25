@@ -90,3 +90,7 @@
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   @apply bg-primary;
 }
+
+.form-error {
+  @apply text-red-400 font-bold;
+}
