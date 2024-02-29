@@ -25,4 +25,12 @@ export const projectData = [
         link: 'https://krokoninja.github.io/fem-huddle-landing-page/',
         github: 'https://github.com/KrokoNinja/fem-huddle-landing-page',
     },
+    {
+        image: "/work/advice-generator.webp",
+        category: "Next JS",
+        title: "Advice Generator",
+        description: "This is a simple advice generator built with Next JS and Tailwind CSS.",
+        link: 'https://advice-generator-plum-six.vercel.app/',
+        github: 'https://github.com/KrokoNinja/advice-generator'
+    },
 ] as Project[];
