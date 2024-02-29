@@ -2,6 +2,14 @@ import Project from "@/typings";
 
 export const projectData = [
     {
+        image: "/work/advice-generator.webp",
+        category: "Next JS",
+        title: "Advice Generator",
+        description: "This is a simple advice generator built with Next JS and Tailwind CSS.",
+        link: 'https://advice-generator-plum-six.vercel.app/',
+        github: 'https://github.com/KrokoNinja/advice-generator'
+    },
+    {
         image: "/work/personal-portfolio.webp",
         category: "Next JS",
         title: "Personal Portfolio",
@@ -24,13 +32,5 @@ export const projectData = [
         description: "This is a solution to the Huddle landing page challenge on Frontend Mentor.",
         link: 'https://krokoninja.github.io/fem-huddle-landing-page/',
         github: 'https://github.com/KrokoNinja/fem-huddle-landing-page',
-    },
-    {
-        image: "/work/advice-generator.webp",
-        category: "Next JS",
-        title: "Advice Generator",
-        description: "This is a simple advice generator built with Next JS and Tailwind CSS.",
-        link: 'https://advice-generator-plum-six.vercel.app/',
-        github: 'https://github.com/KrokoNinja/advice-generator'
     },
 ] as Project[];
