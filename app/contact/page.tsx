@@ -14,7 +14,6 @@ export default function Contact() {
                         </div>
                         <h1 className="h1 max-w-md mb-8">Lass uns zusammen&shy;arbeiten.</h1>
                         <p className="subtitle max-w-[400px]">Schreibe mir gerne und lass uns über unsere Zusammenarbeit sprechen.</p>
-                        <p className="form-error max-w-[400px]">Leider gibt es im Moment ein Problem mit dem Kontaktformular. Du kannst mir gerne direkt per Mail schreiben.</p>
                     </div>
                     <div className="hidden xl:flex w-full bg-contact_illustration_light dark:bg-contact_illustration_dark bg-contain bg-top bg-no-repeat"></div>
                 </div>
