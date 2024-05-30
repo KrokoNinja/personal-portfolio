@@ -5,6 +5,7 @@ import { Badge } from './ui/badge';
 import Image from 'next/image';
 import { Link2Icon } from 'lucide-react';
 import { RiGithubFill } from 'react-icons/ri';
+import TextTruncate from 'react-text-truncate';
 
 export default function ProjectCard({project} : {project: Project}) {
   return (
@@ -27,7 +28,7 @@ export default function ProjectCard({project} : {project: Project}) {
                 {project.category}
             </Badge>
             <h4 className='h4 mb-1'>{project.title}</h4>
-            <p className='text-muted-foreground text-lg'>{project.description}</p>
+            <TextTruncate text={project.description} element="p" truncateText='...' line={2} containerClassName='subtitle' />
         </div>
     </Card>
   );
