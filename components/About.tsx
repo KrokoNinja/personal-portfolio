@@ -22,7 +22,7 @@ const infoData =[
   },
   {
     icon: <GraduationCap />,
-    text: "A-Levels 2019",
+    text: "Abitur 2019",
   },
   {
     icon: <HomeIcon />,
