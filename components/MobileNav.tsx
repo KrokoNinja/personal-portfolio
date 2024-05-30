@@ -7,7 +7,7 @@ import Socials from "./Socials";
 export default function MobileNav() {
     return <Sheet>
         <SheetTrigger asChild>
-            <AlignJustify className="cursor-pointer" />
+            <AlignJustify className="cursor-pointer dark:stroke-white stroke-black" />
         </SheetTrigger>
         <SheetContent>
             <div className="flex flex-col items-center justify-between h-full py-8">
