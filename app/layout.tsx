@@ -21,9 +21,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning={true}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <body className={outfit.className}>
-          <Header />
-          {children}
-          <Footer />
+          <div className="relative min-h-screen">
+            <Header />
+            <div className="pb-[155px]">{children}</div>
+            <Footer />
+          </div>
         </body>
       </ThemeProvider>
     </html>
