@@ -91,6 +91,7 @@ const config = {
         "contact_illustration_dark": 'url("/contact/illustration-dark.svg")',
         "work_project_bg_light": 'url("/work/project-bg-light.png")',
         "work_project_bg_dark": 'url("/work/project-bg-dark.png")',
+        "menu": 'url(/menu.svg)'
       },
     },
   },
