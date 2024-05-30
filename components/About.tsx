@@ -148,7 +148,7 @@ export default function About() {
                     </div>
                     <div className="flex-1">
                         <Tabs defaultValue="personal">
-                            <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
+                            <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none py-3 xl:py-0">
                                 <TabsTrigger className="w-[162px] xl:w-auto" value="personal">Persönliche Infos</TabsTrigger>
                                 <TabsTrigger className="w-[162px] xl:w-auto" value="qualifications">Qualifikationen</TabsTrigger>
                                 <TabsTrigger className="w-[162px] xl:w-auto" value="skills">Skills</TabsTrigger>
@@ -170,7 +170,7 @@ export default function About() {
                                         </div>
                                         <div className="flex flex-col gap-y-2">
                                           <div className="text-primary">Sprachen</div>
-                                          <div className="border-b border-border"></div>
+                                          <div className="border-b border-border w-full md:w-2/4 mx-auto xl:w-full"></div>
                                           <div>Deutsch (Muttersprache), Englisch (C1)</div>
                                         </div>
                                     </div>
