@@ -158,10 +158,10 @@ export default function About() {
                                     <div className="text-center xl:text-left">
                                         <h3 className="h3 mb-4">Das bin ich!</h3>
                                         <p className="subtitle max-w-xl mx-auto xl:mx-0">Nachdem ich lange Zeit nicht wusste, was ich nach dem Abi machen soll, hab ich nun endlich gefunden was mir Spaß macht. Webentwicklung!</p>
-                                        <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                                        <div className="grid xl:grid-cols-2 gap-4 mb-12 justify-center">
                                           {infoData.map((item:InfoType, index:number) => {
                                             return (
-                                              <div className="flex items-center gap-x-4 mx-auto xl:mx-0" key={index}>
+                                              <div className="flex w-full items-center gap-x-4 mx-auto xl:mx-0" key={index}>
                                                 <div className="text-primary">{item.icon}</div>
                                                 <div>{item.text}</div>
                                               </div>
