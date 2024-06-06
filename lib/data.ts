@@ -2,6 +2,14 @@ import Project from "@/typings";
 
 export const projectData = [
     {
+        image: "/work/casecobra.png",
+        category: "Next JS",
+        title: "Casecobra",
+        description: "Custom Phone Case maker built with NextJS, Tailwind CSS and shadcn/ui.",
+        link: 'https://casecobra-ten.vercel.app/',
+        github: 'https://github.com/KrokoNinja/casecobra'
+    },
+    {
         image: "/work/advice-generator.webp",
         category: "Next JS",
         title: "Advice Generator",
