@@ -19,7 +19,7 @@ export default function Work() {
         <div className="container mx-auto flex gap-x-8 flex-col xl:flex-row">
             <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
                 <h2 className="section-title mb-4">Meine Projekte</h2>
-                <p className="subtitle mb-8">Hier sind ein paar meiner Projekte aufgelistet. Mein größtes Projekt bisher? Diese Seite hier! Ich habe andere größere Projekte angefangen, aber diese haben es leider nicht bis zum Deployment geschafft.</p>
+                <p className="subtitle mb-8">Hier sind ein paar meiner Projekte aufgelistet. Mein größtes Projekt bisher? Casecobra! Mit Hilfe von <a href="https://www.github.com/joschan21" className="border-b border-zinc-400">joschan21</a> und seinem 12 Stunden (!) YouTube Video habe ich es geschafft, diese Seite zu bauen und hatte die Möglichkeit sehr viele neue Dinge zu lernen.</p>
                 <Link href="/projects/">
                     <Button className="mt-8 gap-x-4 group">
                         Zu allen Projekten
