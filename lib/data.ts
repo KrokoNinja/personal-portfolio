@@ -2,6 +2,14 @@ import Project from "@/typings";
 
 export const projectData = [
     {
+        image: "/work/fem-space-tourism.webp",
+        category: "Next JS",
+        title: "Space Tourism",
+        description: "This is a solution to the Space tourism challenge on Frontend Mentor.",
+        link: 'https://fem-space-tourism-pearl.vercel.app/',
+        github: 'https://github.com/KrokoNinja/fem-space-tourism',
+    },
+    {
         image: "/work/casecobra.png",
         category: "Next JS",
         title: "Casecobra",
