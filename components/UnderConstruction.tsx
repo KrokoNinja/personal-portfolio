@@ -20,7 +20,7 @@ export default function UnderConstruction() {
             noch in der Entwicklung und ich arbeite an der Implementierung von
             Features.
           </p>
-          <div className="flex gap-4 xl:flex-col">
+          <div className="flex gap-4 flex-col sm:flex-row xl:flex-col">
             <Link
               href="https://github.com/KrokoNinja/darts-tracker"
               className={cn(buttonVariants(), "flex items-center gap-2")}

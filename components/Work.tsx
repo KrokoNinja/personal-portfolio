@@ -20,29 +20,32 @@ export default function Work() {
       <div className="container mx-auto flex gap-x-8 flex-col">
         <h2 className="section-title mb-8 mx-auto">Meine Projekte</h2>
         <UnderConstruction />
-        <div className="xl:max-w-[1000px] mx-auto">
-          <Swiper
-            className="h-[480px]"
-            slidesPerView={1}
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-              },
-            }}
-            spaceBetween={30}
-            modules={[Pagination]}
-            pagination={{
-              clickable: true,
-            }}
-          >
-            {projectData.slice(0, 4).map((project, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <ProjectCard project={project} />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+        {/* FIX: Swiper responsiveness */}
+        <div className="max-w-screen">
+          <div className="mx-auto">
+            <Swiper
+              className="h-[480px]"
+              slidesPerView={1}
+              breakpoints={{
+                1024: {
+                  slidesPerView: 2,
+                },
+              }}
+              spaceBetween={30}
+              modules={[Pagination]}
+              pagination={{
+                clickable: true,
+              }}
+            >
+              {projectData.slice(0, 4).map((project, index) => {
+                return (
+                  <SwiperSlide key={index}>
+                    <ProjectCard project={project} />
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
         </div>
         <Link href="/projects/" className="mx-auto">
           <Button className="mt-8 gap-x-4 group">
