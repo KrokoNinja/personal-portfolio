@@ -2,6 +2,7 @@ import { Briefcase, Calendar, GraduationCap, HomeIcon, MailIcon, PhoneCall, User
 import DevImg from "./DevImg";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import Image from "next/image";
+import Link from "next/link";
 
 const infoData =[
   {
@@ -35,9 +36,9 @@ const qualificationData = [
     title: 'education',
     data: [
       {
-        university: "Fachhochschule für Finanzen",
-        degree: "Ohne Abschluss",
-        years: "2019 - 2020",
+        university: "IU Internationale Hochschule",
+        degree: "Bisher ohne Abschluss",
+        years: "2023 - Heute",
       },
       {
         university: "Ruhr-Univarität Bochum",
@@ -45,9 +46,9 @@ const qualificationData = [
         years: "2020 - 2023",
       },
       {
-        university: "IU Internationale Hochschule",
-        degree: "Bisher ohne Abschluss",
-        years: "2023 - Heute",
+        university: "Fachhochschule für Finanzen",
+        degree: "Ohne Abschluss",
+        years: "2019 - 2020",
       }
     ]
   },
@@ -55,20 +56,23 @@ const qualificationData = [
     title: 'work experience',
     data: [
       {
+        company: "E/D/E GmbH",
+        role: "Software Entwickler",
+        years: "04.2025 - Heute",
+        link: "https://www.ede.de/"
+      },
+      {
         company: "Optimerch GmbH",
         role: "Web Developer",
-        years: "2023 - Heute",
+        years: "04.2023 - 03.2025",
+        link: "https://www.optimerch.de/"
       },
       {
         company: 'dm drogerie markt',
         role: "Mitarbeiter im Wareneingang",
-        years: "2021 - 2023"
+        years: "04.2021 - 03.2023",
+        link: "https://www.dm.de/"
       },
-      {
-        company: "Kletterwald Wetter",
-        role: "Klettertrainer",
-        years: "2020 - 2021"
-      }
     ]
   },
 ];
@@ -78,30 +82,45 @@ const skillData = [
     title: 'skills',
     data: [
       {
-        name: "HTML, CSS"
+        name: "HTML",
+        imgPath: "/about/html.svg"
       },
       {
-        name: "JavaScript"
+        name: "CSS",
+        imgPath: "/about/css.svg"
       },
       {
-        name: "React"
+        name: "JavaScript",
+        imgPath: "/about/js.svg"
       },
       {
-        name: "Next.js"
+        name: "React",
+        imgPath: "/about/react.svg"
       },
       {
-        name: "Tailwind CSS"
+        name: "Next.js",
+        imgPath: "/about/nextjs.svg"
       },
+      {
+        name: "Tailwind CSS",
+        imgPath: "/about/tailwind.svg"
+      },
+      {
+        name: "Python",
+        imgPath: "/about/python.svg"
+      }
     ]
   },
   {
     title: 'tools',
     data: [
       {
+        name: "VS Code",
         imgPath: "/about/vscode.svg"
       },
       {
-        imgPath: "/about/notion.svg"
+        name: "WordPress",
+        imgPath: "/about/wordpress.svg"
       }
     ]
   }
@@ -120,6 +139,7 @@ type QualificationDataType = {
     years?: string;
     company?: string;
     role?: string;
+    link?: string;
   }[];
 };
 
@@ -195,11 +215,11 @@ export default function About() {
                                                   <div className="h-[84px] w-[1px] bg-border relative ml-2">
                                                     <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                                   </div>
-                                                  <div>
+                                                  <Link href={item.link || ''} target="_blank" className="hover:text-primary">
                                                     <div className="font-semibold text-xl leading-none mb-2">{item.company}</div>
                                                     <div className="text-lg leading-none text-muted-foreground mb-4">{item.role}</div>
                                                     <div className="text-base font-medium">{item.years}</div>
-                                                  </div>
+                                                  </Link>
                                                 </div>
                                               );
                                             }
@@ -245,12 +265,13 @@ export default function About() {
                                       <h4 className="text-xl font-semibold mb-2">Skills</h4>
                                       <div className="border-b border-border mb-4"></div>
                                       {/*skill list*/}
-                                      <div>
+                                      <div className="flex flex-row gap-x-6 gap-y-4 justify-center flex-wrap xl:justify-start">
                                         {getData(skillData, 'skills')?.data.map((item, index) => {
                                           if ('name' in item) {
                                           return (
-                                            <div className="w-2/4 text-center xl:text-left mx-auto xl:mx-0" key={index}>
-                                              <div className="font-medium">{item.name}</div>
+                                            <div className="flex flex-col items-center gap-y-2" key={index}>
+                                              <Image src={item.imgPath || ''} height={48} width={48} alt="" />
+                                              <p className="font-medium">{item.name}</p>
                                             </div>
                                           )
                                           }
@@ -265,8 +286,9 @@ export default function About() {
                                         {getData(skillData, 'tools')?.data.map((item, index) => {
                                           if ('imgPath' in item && item.imgPath) {
                                             return (
-                                              <div key={index}>
+                                              <div className="flex flex-col items-center gap-y-2" key={index}>
                                                 <Image src={item.imgPath} height={48} width={48} alt="" />
+                                                <p className="font-medium">{item.name}</p>
                                               </div>
                                             )
                                           }
