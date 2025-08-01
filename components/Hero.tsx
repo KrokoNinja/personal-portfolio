@@ -32,7 +32,7 @@ export default function Hero() {
                 </Button>
               </Link>
               <Link
-                href="/hero/Lebenslauf_DE.pdf"
+                href="/hero/lebenslauf_lpfundtner.pdf"
                 download={true}
                 rel="noopener noreferrer"
               >
