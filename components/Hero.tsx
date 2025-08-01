@@ -52,8 +52,8 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="hidden md:flex absolute left-0 right-0 ml-auto mr-auto w-[30px] bottom-44 md:bottom-12 xl:bottom-5 animate-bounce">
-          <RiArrowDownSLine className="text-3xl text-primary" />
+        <div className="hidden md:flex absolute right-20 ml-auto mr-auto w-[50px] bottom-44 md:bottom-12 xl:bottom-5 animate-bounce">
+          <RiArrowDownSLine className="text-primary h-full w-full" size={50} />
         </div>
       </div>
     </section>
