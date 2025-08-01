@@ -9,7 +9,8 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Lennert Pfundtner",
-  description: "Web Developer from Germany. Studiyng Computer Science at IU Internationale Hochschule.",
+  description:
+    "Web Developer from Germany. Studiyng Computer Science at IU Internationale Hochschule.",
 };
 
 export default function RootLayout({
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
         <body className={outfit.className}>
           <div className="relative min-h-screen">
             <Header />
