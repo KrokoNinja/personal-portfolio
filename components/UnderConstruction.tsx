@@ -7,7 +7,7 @@ import { ExternalLink } from "lucide-react";
 
 export default function UnderConstruction() {
   return (
-    <div className="bg-tertiary p-6 rounded-lg mb-8 dark:bg-secondary">
+    <div className="bg-tertiary p-6 rounded-lg mb-8 dark:bg-secondary shadow-sm border">
       <div className="flex gap-8 flex-col xl:flex-row">
         <div className="flex flex-col gap-4 justify-between">
           <h3 className="text-2xl font-bold text-tertiary-foreground">
